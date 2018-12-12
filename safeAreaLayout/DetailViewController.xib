@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="safeAreaLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RS6-cL-IRI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OG-h0-h3T">
+                            <rect key="frame" x="166.5" y="32" width="42" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Bjb-Hp-9fI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1OG-h0-h3T" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RS6-cL-IRI" secondAttribute="top" constant="32" id="i4a-4k-Cbv"/>
+                        <constraint firstAttribute="bottom" secondItem="1OG-h0-h3T" secondAttribute="bottom" constant="11" id="rSe-Fc-9pB"/>
+                        <constraint firstItem="1OG-h0-h3T" firstAttribute="centerX" secondItem="RS6-cL-IRI" secondAttribute="centerX" id="ueo-IB-Gcd"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="zCX-BB-TC7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RS6-cL-IRI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3Ya-5x-6on"/>
+                <constraint firstItem="RS6-cL-IRI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TvA-hO-sYZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RS6-cL-IRI" secondAttribute="trailing" id="auM-E2-lih"/>
+                <constraint firstItem="1OG-h0-h3T" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" priority="750" constant="12" id="i7Y-UY-dHT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="226" y="387"/>
+        </view>
+    </objects>
+</document>
